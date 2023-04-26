@@ -1,0 +1,147 @@
+.nav_body {
+    font-size: 64px;
+  
+}
+.nav_body a {
+    text-decoration: none;
+    color: #00984f;
+    transition: opacity 350ms
+}
+
+.modal {
+    z-index: 2;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+
+
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+.modal-content {
+    opacity: 0;
+    -webkit-transition: 0.4s all;
+    -o-transition: 0.4s all;
+    transition: 0.4s all;
+}
+.modal-content a{
+    text-decoration: none;
+    color: #00984f;
+}
+
+
+.modal-content.active {
+    opacity: 1;
+-webkit-transform: opacity 0.4s;
+    -ms-transform: opacity 0.4s;
+        transform: opacity 0.4s;
+
+}
+
+.nav_head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 3vh 1vw;
+}
+.nav_head img {
+    cursor: pointer;
+    margin-left: 1vw;
+    width: 3vw;
+    transition: opacity 350ms;
+}
+
+.nav_head img:hover {
+    opacity: 0.5;
+}
+
+
+.nav_top {
+    transition: opacity 350ms;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 8vh 30vh;
+}
+
+.nav_top a:hover {
+    opacity: 0.5;
+}
+
+.nav_media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom:11.5vh;
+}
+
+
+.nav_media_links{
+    display: flex;
+
+}
+.nav_media_links a{
+    padding: 3vh;
+    font-size: 40px;
+    color: rgba(161, 161, 161, 0.933);
+    transition: all 350ms
+}
+
+.nav_media_links a:hover{
+    opacity: 0.5;
+}
+
+.nav_footer a{
+    margin: 4vh;
+    font-size: 24px;
+    text-decoration: none;
+    transition: all 350ms;
+}
+
+.nav_footer a:after {
+    content: ''; 
+    height: 1px;
+    display: block;
+    border-bottom: 1px solid #00984f;
+    width: 0;
+    -webkit-transition: width 350ms;
+    -o-transition: width 350ms;
+    transition: width 350ms;
+}
+.nav_footer:hover{
+    text-decoration: none;
+
+}
+.nav_footer a:hover::after{
+    width: 100%;
+}
+
+.nav_footer a:hover{
+    font-size: 28px;
+    opacity: 1;  
+}
+
+

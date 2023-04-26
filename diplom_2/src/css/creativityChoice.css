@@ -1,0 +1,7 @@
+.buttonChoice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30vh 0vh 10vh 4.5vh;
+}
+

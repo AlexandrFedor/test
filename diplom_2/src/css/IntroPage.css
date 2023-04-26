@@ -1,0 +1,50 @@
+@keyframes showAll{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    animation: showAll 1.5s;
+}
+.block img {
+    margin-top: -10vh;
+   max-width: 50vh;
+}
+
+.block h1 {
+    margin: 0;
+    font-weight: 300;
+font-size: 96px;
+line-height: 120px;
+}
+ 
+.block h2 {
+    margin-top: 0;
+    font-weight: 300;
+font-size: 48px;
+line-height: 60px;
+}
+
+.block h3 {
+    margin-top: 5.5vh;
+    margin-bottom: 7vh;
+    font-weight: 300;
+font-size: 30px;
+line-height: 38px;
+}
+
+.containerIntro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

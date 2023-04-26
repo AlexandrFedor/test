@@ -1,0 +1,98 @@
+
+.inactivePh {
+    display: none;
+  
+}
+
+.phModal.activePh{
+    pointer-events: all;
+    display:flex;
+  opacity: 1;
+
+  animation: fadeInFromNone 350ms ease-in-out;
+  animation-fill-mode: forwards;
+
+}
+
+.inactivePh.non-visible{
+    animation: fadeOutFromBlock 350ms ease-in-out;
+}
+
+@keyframes fadeInFromNone {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOutFromBlock {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+
+.phModal {
+    display: flex;
+    align-items: center;
+
+
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+
+.phMdContent {
+    display: flex;
+    width: 100vw;
+  opacity: 0;
+  transition: opacity 0.5s;
+ 
+}
+.phMdContent.activePh {
+  opacity: 1;
+}
+
+.modal-album{
+  
+    display: flex;
+    flex-direction: column;
+  height: 60vh;
+  margin: 0vh 10vw;
+      font-size: 36px;
+  text-align: center;
+}
+.modal-album img{ 
+     border: #00984f solid 2px;
+    box-shadow:  0px 0px 10px 2px rgba(16, 160, 3, 0.8);
+ object-fit: cover;
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+.apple-kit {
+    margin-top: 7.5vh;
+  width: 100%;
+  max-width: 660px;
+  overflow: hidden;
+  border-radius: 10px;
+  transform: translateZ(0px);
+  animation: 2s ease 0s 6 normal none running loading-indicator;
+  background-color: rgb(228, 228, 228);
+}

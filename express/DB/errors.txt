@@ -1,0 +1,84 @@
+EBADAUTHDATA => 
+    tryed to run method without all AUTH properties
+    попытка вызвать метод без всех свойств AUTH
+    :
+    check AUTH properties
+    проверьте свойства AUTH
+
+ENOIDENTIFYDATA =>
+    tryed to run method without AUTH or JWT token
+    попытка вызвать метод без AUTH или JWT токена
+    :
+    check method input properties
+    проверьте входные данныке метода
+
+ENOID =>
+    tryed to run method without AUTH ID
+    попытка вызвать метод без AUTH ID
+
+ENOAUTH =>
+    tryed to run method without AUTH Object
+    попытка вызвать метод без AUTH Объекта
+
+ENOUSER =>
+    user not found in DB
+    пользователь не был найден в бд
+
+ENOJWT =>
+    tryed to run method without JWT token
+    попытка вызвать метод без JWT токена
+
+EAUTHDATAISNOTASTRING =>
+    AUTH properties are not type of String
+    AUTH свойства не типа String
+
+EIDISNOTASTRING =>
+    AUTH ID is not type of String
+    AUTH ID не типа String
+
+JWTISNOTASTRING =>
+    JWT token is not type of String
+    JWT токен не типа String
+
+ENOJWTS => 
+    DBH init method dont get JWT secret
+    DBH init метод не получил JWT секрет
+    :
+    check config
+    проверьте конфиг
+
+ENOCONFIGPROPERIES =>
+    DBH init method dont get config properties
+    DBH init метод не получил свойства конфига
+    :
+    check that config has this properties
+    убедитесь что в конфиге есть следующие свойства
+    {
+        login: "db login",
+        password: "db password",
+        db: "collection name",
+        host: "ip:port(default is 27017)"
+    }
+
+EJWTEXPIRED =>
+    JWT token expired, create new one
+    JWT токен истек, создайте новый
+    :
+    create new JWT token using JWTCreate method
+    создайте новый токен методом JWTCreate
+
+ENOEMAILORLOGIN =>
+    tryed to run method without AUTH email or login
+    попытка вызвать метод без AUTH емейла или логина
+
+ENOPASSWORD =>
+    tryed to run method without AUTH password
+    попытка вызвать метод без AUTH пароля
+
+EPARAMSBUSY =>
+    AUTH login or email are already exists in DB
+    AUTH логин или емаил уже существуют в базе данных
+
+ENOCACHEUSER =>
+    user not found in cache
+    пользователь не найден в кеше

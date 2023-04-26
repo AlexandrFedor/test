@@ -1,0 +1,79 @@
+main {
+    min-height: 100vh;
+
+  }
+  
+  
+
+  
+  .main-header {
+      display: flex;
+      justify-content: flex-start;
+     
+  }
+  
+  
+  .burger-style {
+      width: 5vh;
+      height: 3.5vh;
+      margin-left: 3vh;
+      padding-top: 3.5vh;
+      cursor: pointer;
+  }
+  
+  .main-footer {
+    margin-left:25px;
+    margin-bottom:25px ;
+    display: flex;
+    font-size: 20pt;
+  }
+  .main-footer a{
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #00984f;
+    text-decoration: none;
+  }
+  .main-footer img {
+      cursor: pointer;
+  }
+ 
+  .avatar {
+      margin-top: 2.25vh;
+      margin-left: auto;
+      margin-right: 5vh;
+      font-size: 3vh;
+      width: 6vh;
+      height: 6vh;
+      border-radius: 50%;
+      background: #555;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    
+    .avatar::after {
+      content: attr(data-label);
+      font-family: "bionbook_cond";
+      color: #ffffff;
+    }
+   
+
+.logoHeader img{
+    max-width: 10vh;
+    cursor: pointer;
+  
+  }
+
+  .main-header img:hover {
+    opacity: 0.6;
+    transition: opacity 350ms;
+  }
+  .main-header img {
+    opacity: 1;
+    transition: opacity 350ms;
+  }
+
+.main-footer a:hover{
+
+}

@@ -1,0 +1,26 @@
+{
+    "api": {
+        "get": {
+            "FSPath": true,
+            "posts": true,
+            "lastPosts": true
+        },
+        "post": {
+            "user": true
+        },
+        "redirect": {
+            "custom": true
+        }
+    },
+    "web": {
+        "ssl": false,
+        "port": 3010
+    },
+    "DB": {
+        "user": "user",
+        "password": "user",
+        "host": "127.0.0.1:27017",
+        "database": "diplom",
+        "JWTS": "asdsadasdasdasdasfgdsgfgy8ifsuhfdsoifdso"
+    }
+}
