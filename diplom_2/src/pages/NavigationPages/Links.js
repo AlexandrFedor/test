@@ -13,7 +13,7 @@ function Links() {
         <div className="inp_Main">
           <div className="on_Main">
             <img src={back} />
-            <p>На главную</p>
+            <p>Назад</p>
           </div>
 
           <ul className="container-links">

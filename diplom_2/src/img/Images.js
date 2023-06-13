@@ -1,4 +1,5 @@
-const Images = {
+
+export default {
     hexvgon: {
         sim: require('./authors/hex.png').default,
         exd: require('./hex/hexvgon_babachaka.jpg').default,
@@ -8,5 +9,3 @@ const Images = {
         mir: require('./authors/mir.jpg').default,
     }
 }
-
-export default Images

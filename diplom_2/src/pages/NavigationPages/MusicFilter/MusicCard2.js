@@ -1,16 +1,24 @@
 import MusicFunction from "./MusicFunction";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-const MusicCard2 = ({item}) => {
+const MusicCard2 = ({item, remove}) => {
+
+    if (!item.length) {
+        return <h1>Посты не найдены</h1>;
+      }
 
     return(
-        <div className="container-music">
-        {item?.map(Val => {
-            return (
-                <MusicFunction  key={Val.id} img={Val.img} release={Val.release} apple={Val.apple} musicants={Val.musicants}/>
-            )
+        <TransitionGroup className="container-music">
+        {item.map(Val => 
+        <CSSTransition key={Val.id} timeout={500} classNames="post">
             
-        })}
-        </div>
+           
+                <MusicFunction post={Val} remove={remove} />
+    
+            
+        </CSSTransition>
+    )}
+        </TransitionGroup>
     )
 }
 

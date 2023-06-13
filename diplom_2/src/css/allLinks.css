@@ -1,0 +1,21 @@
+.all-links{
+    display: flex;
+    margin: 3vh 0;
+}
+.all-links img{
+    padding: 0vh 0.5vw;
+}
+
+.all-links img:hover{
+    opacity: 0.8;
+}
+
+.tea-links img{
+    filter: invert(12%) sepia(100%) saturate(5432%) hue-rotate(353deg) brightness(86%) contrast(88%);
+ 
+}
+
+.kors-links img{
+    
+    filter: invert(12%) sepia(100%) saturate(5100%) hue-rotate(190deg) brightness(86%) contrast(88%);
+}

@@ -214,7 +214,7 @@ class DBH {
 				text: opts.post.text || null,
 				imgUrl: opts.post.url,
 				likes: 0,
-				likesId: "сделай лайки сука"
+				likesId: "сделай лайки"
 			})
 			console.log(opts.auth)
 			post.save().then(() => {

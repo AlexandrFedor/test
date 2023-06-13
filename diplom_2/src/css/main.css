@@ -1,5 +1,11 @@
 
+*{
+    animation: showAll 500ms ease-in-out;
+}
+
 body {
+    margin: 0;
+    padding: 0;
     -webkit-touch-callout: none; 
     -webkit-user-select: none; 
      -khtml-user-select: none; 
@@ -11,7 +17,42 @@ body {
   mix-blend-mode: lighten;
   font-family: "bionbook_cond";
   color: #00984f;
+
+  
 }
+
+.allAnimate{
+    position: absolute;
+    
+}
+
+.allAnimate-enter-active {
+    animation: showAll 350ms ease-in-out;
+}
+
+.allAnimate-exit-active {
+    animation: hideAll 350ms ease-in-out;
+}
+
+@keyframes showAll{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes hideAll {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
 
 ::-webkit-scrollbar{
      background: none;
@@ -44,6 +85,17 @@ body {
     justify-content: center;
     align-items: center;
  }
+
+
+ @media (min-width: 250px) and (max-width: 850px) {
+    ::-webkit-scrollbar{
+        width: 0.5em;
+    }
+ }
+
+
+ 
+
 
 
 

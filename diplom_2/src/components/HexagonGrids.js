@@ -1,33 +1,39 @@
-import React from "react";
-import '../css/hexagonGrids.css'
-import music from '../img/music-note-svgrepo-com.svg'
-import art from '../img/art-design-paint-pallet-format-text-svgrepo-com.svg'
+import React, { useState } from "react";
+import "../css/hexagonGrids.css";
 
-function HexagonGrids() {
-    return (
-        
-<ul className="honeycomb">
-   
-    <li className="honeycomb-cell">
-        <img className="honeycomb-cell_img" src={music}/>
-        <div className="honeycomb-cell_title">Музыка</div>
-    </li>
-    <li className="honeycomb-cell">
-        <img className="honeycomb-cell_img" src={art}/>
-        <div className="honeycomb-cell_title">Арт</div>
-    </li>
-  
-  
-    {/*<li className="honeycomb-cell">
-        <img className="honeycomb-cell_img" src=""/>
-        <div className="honeycomb-cell_title">Чёто</div>
-    </li>*/}
-    
-    <li className="honeycomb-cell honeycomb_Hidden">
-    </li>
-</ul>
+function HexagonGrids(props) {
+  const [isActive, setActive] = useState(false);
 
-    )
+  function toggleClass() {
+    setActive(!isActive);
+  }
+
+  return (
+    <>
+      <li
+        className={props.isActive ? "honeycomb-cell choice" : "honeycomb-cell"}
+        onClick={()=> {toggleClass();}}
+           
+      >
+        <img
+       
+          className={
+            props.isActive ? "honeycomb-cell_img choice-img" : "honeycomb-cell_img"
+          }
+          src={props.img}
+        />
+        <div
+          className={
+            props.isActive
+              ? "honeycomb-cell_title choice-title"
+              : "honeycomb-cell_title"
+          }
+        >
+          {props.title}
+        </div>
+      </li>
+    </>
+  );
 }
 
-export default HexagonGrids
+export default HexagonGrids;

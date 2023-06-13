@@ -18,7 +18,7 @@ const DataMusic = [
         artist: 'hexvgon',
         musicants: 'hexvgon', 
         release: 'Simulacrium',
-        apple: '',
+        apple: 'https://open.spotify.com/embed/album/2l0qVAjCUFwEVSl1b0ykY2?utm_source=generator',
     },
     {
         id: 2,
@@ -44,7 +44,7 @@ const DataMusic = [
         artist: 'Kors Naike',
         musicants: 'Kors Naike', 
         release:'Mir',  
-        apple: '',
+        apple: "https://open.spotify.com/embed/album/2XjQBwHspuA58Wf1BzdonZ?utm_source=generator&theme=0",
     },
     {
         id:5,

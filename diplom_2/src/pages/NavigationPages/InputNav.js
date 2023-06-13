@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../css/InputNav.css";
 import DefaultPage from "../../components/DefaultPage";
 import back from "../../img/back-svgrepo-com.svg";
-import { Link } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 
 function InputNav(props) {
+
+    const navigate = useNavigate();
 
 
   return (
@@ -13,14 +15,14 @@ function InputNav(props) {
       page={
         <div className="inp_Main">
           <div className="on_Main">
-            <img src={back} />
-            <p>На главную</p>
+            <img src={back} onClick={() => navigate(-1)} />
+            <p>Назад</p>
           </div>
           <nav className="hov">
             <div className="category">
-                <Link to='/photo'>Фото</Link>
-                <Link to='/music'>Музыка</Link>
-                <Link to='/video'>Видео</Link>             
+                <NavLink  to='/photo'>Фото</NavLink>
+                <NavLink to='/music'>Музыка</NavLink>
+                <NavLink to='/video'>Видео</NavLink>             
             </div>
           </nav>
           <div>{props.content}</div>

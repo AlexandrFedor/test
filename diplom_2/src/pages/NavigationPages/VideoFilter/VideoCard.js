@@ -1,30 +1,22 @@
 import React from "react";
+import VideoList from "./VideoList";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-const VideoCard = ({ item }) => {
+const VideoCard = ({ item, remove }) => {
+
+    if (!item.length) {
+        return <h1>Посты не найдены</h1>;
+      }
   return (
-    <>
-      <ul className="container-video">
-        {item?.map((Val) => {
-          return (
-            <div key={Val.id}>
-              <li className="content-video">
-                <iframe
-                  width="1136"
-                  height="639"
-                  src={Val.url}
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </li>
-              <div className="text-video">
-                <p className="text-video">{Val.description}</p>
-              </div>
-            </div>
-          );
-        })}
-      </ul>
-    </>
+      <TransitionGroup className="container-video">
+        {item.map((Val) => 
+          <CSSTransition key={Val.id} timeout={500} classNames="post">
+
+        
+           <VideoList remove={remove} post={Val}/>
+         </CSSTransition>
+        )}
+      </TransitionGroup>
   );
 };
 

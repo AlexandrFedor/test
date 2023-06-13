@@ -1,18 +1,9 @@
-@keyframes showAll{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 
 
 .all-container{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    animation: showAll 0.5s;
   }
   .body-container{
       width: 100%;
@@ -24,10 +15,8 @@
   }
   .login_form_container{
       position: relative;
-      width: 55vh;
-      height: 52vh;
-      max-width: 55vh;
-      max-height: 65vh;
+      width: 520px;
+      height: 540px;
       background: #040717;
       border-radius: 50px 5px;
       display: flex;
@@ -114,8 +103,9 @@
   
   
   }
-  #login_button a{
-    transition: box-shadow 250ms;
+  #login_button button{
+    font-family: 'bionbook_cond';
+    transition: all 250ms;
     color: #00ff9d;
       position: absolute;
       width: 100%;
@@ -132,14 +122,21 @@
       justify-content: center;
       align-items: center;
   }
-  .fotterLog {
-    margin-top: 6vh;
-      display: flex;
-      justify-content: space-between;
-  
+
+  #login_button button:disabled {
+    border: 1px solid #5e8174;
+    color: #5e8174;
   }
 
-  #login_button a:hover {
+  .fotterLog {
+  
+      display: flex;
+      justify-content: space-between;
+height: 8vh;
+align-items: flex-end;
+  }
+
+  #login_button button:hover {
     box-shadow:  0px 0px 10px 2px rgba(16, 160, 3, 0.8);
   }
 

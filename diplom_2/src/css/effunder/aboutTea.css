@@ -1,0 +1,54 @@
+.container-teaAb {
+    font-family: 'han_ziregular';
+    font-weight: normal;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .tag-tea {
+        color: #993333;
+        margin: 0;
+        margin-bottom: 2vh;
+        font-size: 64px;
+        display: flex;
+        justify-content: center;
+      
+    }
+    
+    .content-tea{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    .maskot-tea {
+            width: 50vw;
+    }
+    
+    .maskot-tea img{
+       
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        
+        width: 40vw;
+    
+    }
+    
+    .about-tea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        width: 60vw;
+        color: #fff;
+        font-size: 18px;
+    }
+    .desc-tea{
+        padding: 0vh 4vw;
+        padding-left: 6vw;
+     line-height: 35px;
+        /*width: 47vw;*/
+    }
+    

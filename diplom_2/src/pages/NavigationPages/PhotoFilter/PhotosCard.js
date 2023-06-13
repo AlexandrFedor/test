@@ -1,21 +1,21 @@
 import React from "react";
+import PhotoList from "./PhotoList";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-const PhotosCard = ({item}) => {
+const PhotosCard = ({ item, remove }) => {
     
+    if (!item.length) {
+        return <h1>Посты не найдены</h1>;
+      }
+
   return (
-    <>
-      <ul className="container-photo">
-      {item?.map((Val) => {
-            return (
-            <li className="photo" key={Val.id}>
-              <a href={Val.img} data-lightbox="covers">
-                <img src={Val.img} />
-              </a>
-            </li>
-          );
-        })}
-      </ul>
-    </>
+    <TransitionGroup className="container-photo">
+      {item.map((Val) => (
+        <CSSTransition key={Val.id} timeout={500} classNames="post">
+          <PhotoList post={Val} remove={remove} />
+        </CSSTransition>
+      ))}
+    </TransitionGroup>
   );
 };
 

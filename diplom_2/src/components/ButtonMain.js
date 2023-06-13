@@ -4,7 +4,7 @@ import '../css/ButtonMain.css'
 
 function ButtonMain(props){
     return (
-       <Link to={props.link} className="green">{props.title}</Link> 
+       <Link to={props.link} {...props} className="green">{props.title}</Link> 
     )
     
 }

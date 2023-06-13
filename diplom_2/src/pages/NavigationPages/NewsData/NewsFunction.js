@@ -1,27 +1,20 @@
-import React, {useState} from "react";
-import ModalNw from "../../../components/ModalNw";
+import React, { useState } from "react";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import NewsList from "./NewsList";
 
-const NewsFunction = ({img,release,date,description}) => {
-    const [isOpen, setIsOpen] = useState(false);
+const NewsFunction = ({ item, remove }) => {
+  if (!item.length) {
+    return <h1>Посты не найдены</h1>;
+  }
+  return (
+    <TransitionGroup className="container-news">
+      {item.map((Val) => (
+        <CSSTransition key={Val.id} timeout={500} classNames="post">
+          <NewsList post={Val} remove={remove} />
+        </CSSTransition>
+      ))}
+    </TransitionGroup>
+  );
+};
 
-    return (
-
-            <div className="content-news">
-              <li className="img-news">
-                <img src={img}/>
-              </li>
-
-              <div className="text-news">
-                <h1>{release}</h1>
-                <p>{date}</p>
-              </div>
-              <ModalNw active={isOpen} setActive={setIsOpen} img={img} release ={release} description={description}></ModalNw>
-              </div>
-              
-
-    )
-
-
-}
-
-export default NewsFunction
+export default NewsFunction;

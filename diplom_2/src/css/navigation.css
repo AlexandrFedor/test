@@ -1,6 +1,6 @@
 .nav_body {
     font-size: 64px;
-  
+    text-align: center;
 }
 .nav_body a {
     text-decoration: none;
@@ -60,7 +60,8 @@
 .nav_head img {
     cursor: pointer;
     margin-left: 1vw;
-    width: 3vw;
+    width: 40px;
+
     transition: opacity 350ms;
 }
 
@@ -74,10 +75,11 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: 8vh 30vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+    gap: 20vw;
+   padding: 0vh 5vw;
 }
 
 .nav_top a:hover {
@@ -95,7 +97,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom:11.5vh;
+            margin-bottom:11.5vh;
+    margin-top:11.5vh;
+    padding: 0vh 5vw;
 }
 
 
@@ -114,7 +118,13 @@
     opacity: 0.5;
 }
 
+.nav_footer {
+    margin-top: 5vh;
+    margin-bottom: 0;
+}
+
 .nav_footer a{
+  
     margin: 4vh;
     font-size: 24px;
     text-decoration: none;
@@ -144,4 +154,29 @@
     opacity: 1;  
 }
 
+.all-links {
+    transition: opacity 350ms;
+}
 
+.all-links a:hover{
+    opacity: 0.5;
+}
+
+@media (min-width: 650px) and (max-width: 800px) {
+
+    .nav_body{
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 650px) {
+    .nav_head img{
+        width: 30px;
+    }
+    .nav_body{
+        font-size: 30px;
+    }
+    .nav_media_links a{
+        font-size: 21px;
+    }
+}

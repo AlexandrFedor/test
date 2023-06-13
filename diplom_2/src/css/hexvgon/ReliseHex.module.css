@@ -1,0 +1,110 @@
+.containerRelise {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.katanaHexv {
+  width: 620px;
+  height: 700px;
+}
+
+
+.releasesImg {
+    transition: all 350ms;
+    cursor: pointer;
+  position: absolute;
+  width: 71.54px;
+  height: 75.58px;
+  border-radius: 50%;
+}
+
+.releasesImg:hover {
+  transform: scale(3);
+  box-shadow: 0px 0px 30px -3px #00984f;
+  border: 1px solid #00984f;
+}
+
+.releasesImg:nth-child(1) {
+  right: 630px;
+  top: 520px;
+}
+.releasesImg:nth-child(5) {
+  left: 770px;
+  top: 270px;
+}
+
+.releasesImg:nth-child(3) {
+  left: 630px;
+  top: 520px;
+}
+.releasesImg:nth-child(4) {
+  right: 775px;
+  top: 790px;
+}
+
+.containerMdHex {
+    text-align: center;
+  width: 70vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.releaseBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vw;
+
+}
+
+
+.imgHexv {
+    border-radius: 50%;
+    width: 20vw;
+    animation: pulse 3s infinite;
+}
+
+.containerMdHex h1 {
+  text-decoration: underline;
+}
+
+.textMdHex {
+    width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkMedia{
+    margin-top: 2vh;
+    color: #00984f;
+    text-decoration: underline;
+    font-size: 24px;
+    transition: opacity 350ms;
+}
+
+.linkMedia:hover {
+    opacity: 0.6;
+}
+
+@keyframes pulse {
+  0% {
+    filter: drop-shadow(0px 0px 10px rgba(3, 153, 41, 0));
+  }
+  50% {
+    filter: drop-shadow(0px 0px 10px rgba(3, 153, 41, 1));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 10px rgba(3, 153, 41, 0));
+  }
+}
+
+.linksHexv img{
+    width: 20px;
+   
+}

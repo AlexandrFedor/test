@@ -1,16 +1,27 @@
 import React from "react";
 import "../css/modal.css";
+import close from "../img/photosSelect/close.png";
 
 function Modal({ active, setActive, img, release, apple }) {
   return (
     <div
       className={active ? "phModal activePh" : "inactivePh"}
-      onClick={() => setActive(false)}
+      onClick={() => {setActive(false)
+        document.body.style.overflow = "visible"
+    }}
     >
       <div
         className={active ? "phMdContent activePh" : "inactivePh"}
         onClick={(e) => e.stopPropagation()}
       >
+          <img
+          className="close"
+          onClick={() => {
+            setActive(false);
+            document.body.style.overflow = "visible"
+          }}
+          src={close}
+        />
           <div className="modal-album">
             <img src={img}></img>
             <p>{release}</p>
