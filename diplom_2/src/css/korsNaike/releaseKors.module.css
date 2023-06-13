@@ -113,3 +113,20 @@ color: rgb(92, 195, 255);
 }
 
 
+@media  (max-width: 550px) {
+    .linksBlock a{
+        font-size: 14px;
+        width: 5vw;
+        padding: 10px 25px;
+    }
+    .containerContent {
+        width: 80vw;
+    
+      }
+      .release {
+        font-size: 16px;
+      }
+      .release img {
+        width: 20vw;
+      }
+}

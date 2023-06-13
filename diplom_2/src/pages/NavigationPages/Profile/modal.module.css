@@ -36,3 +36,9 @@
       opacity: 1;
     }
   }
+
+  @media (min-width: 250px) and (max-width: 750px) {
+    .modalContent {
+        padding: 15px;
+    }
+  }

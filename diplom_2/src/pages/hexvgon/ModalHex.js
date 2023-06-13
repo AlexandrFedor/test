@@ -13,13 +13,13 @@ const ModalHex = ({ open, setOpen, source}) => {
           <AllLinks className={cl.linksHex} />
         </div>
         <div className={cl.textMdHex}>
-          <h1 style={{ marginTop: "5vh" }}>
+          <h1>
             {source.release}
             <br />
             <br />
             {source.date}
           </h1>
-          <p style={{ fontSize: "30px" }}>Описание релиза: <br/> {source.description}</p>
+          <p >Описание релиза: <br/> {source.description}</p>
           <iframe
               className={cl.appleKit}
               id="embedPlayer"

@@ -36,6 +36,7 @@ font-size: 128px;
 
 .links-block{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 margin-top: 2vh;
 }
@@ -48,6 +49,7 @@ margin-top: 2vh;
     cursor: pointer;
     width: 7vw;
     text-decoration: none;
+    margin-bottom: 2vh;
     margin-left: 2vw;
     color: #fff;
     border-radius: 20px;
@@ -102,3 +104,20 @@ margin-top: 2vh;
 
 
 
+@media (min-width: 250px) and (max-width: 550px) {
+    .logo-container {
+        font-size: 60px;
+    }
+    .categories-block {
+        font-size: 28px;
+    }
+    .links-block a{
+        font-size: 14px;
+        width: 5vw;
+        padding: 10px 25px;
+
+    }
+    .logo-container img {
+        width: 50vw;
+    }
+}

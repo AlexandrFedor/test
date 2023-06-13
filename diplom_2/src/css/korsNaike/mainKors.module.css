@@ -85,6 +85,21 @@ margin-top: 2vh;
   }
 
 
+  @media (min-width: 250px) and (max-width: 550px) {
+    .logoContainer {
+        font-size: 60px;
+    }
+    .categoriesBlock {
+        font-size: 28px;
+    }
+    .linksBlock a{
+        font-size: 14px;
+        width: 5vw;
+        padding: 10px 25px;
+
+    }
+}
+
 
 
 

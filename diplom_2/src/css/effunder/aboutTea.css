@@ -52,3 +52,30 @@
         /*width: 47vw;*/
     }
     
+    @media (min-width: 250px) and (max-width: 750px) {
+        .about-tea{
+            width: auto;
+          }
+          
+          .tag-tea{
+              font-size: 26px;
+          }
+      
+          .about-tea p{
+            font-size: 14px;
+              line-height: 2;
+          }
+          .maskot-tea {
+              width: auto;
+            
+
+          }
+          .maskot-tea img{
+             opacity: 0.4;
+             width: 100vw;
+              position: absolute;
+             z-index: -1;
+              left:50%;
+              transform:translate( -50%);
+          }
+    }

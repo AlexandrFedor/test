@@ -57,6 +57,7 @@ try {
     user: {
         id: user.id,
         role: user.roles,
+        avatar: user.avatar
     }})
 
 }

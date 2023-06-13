@@ -13,7 +13,7 @@ export default function userReducer(state = defaultStore, action) {
     case SET_USER:
     return{
         ...state,
-        currentUser: action.payload.user,
+        currentUser: action.payload,
         isAuth:true
     }
     case LOGOUT:

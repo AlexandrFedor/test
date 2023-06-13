@@ -1,25 +1,19 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
 function UserAvatar(props) {
-  const [avatar, setAvatar] = useState();
+  const isAuth = useSelector((state) => state.user.isAuth);
 
-  const avatars = document.querySelectorAll(".avatar, .avatar-profile");
-
-  avatars.forEach((a) => {
-    const charCodeRed = a.dataset.label.charCodeAt(0);
-    const charCodeGreen = a.dataset.label.charCodeAt(1) || charCodeRed;
-
-    const red = Math.pow(charCodeRed, 7) % 200;
-    const green = Math.pow(charCodeGreen, 7) % 200;
-    const blue = (red + green) % 200;
-
-    a.style.background = `rgb(${red}, ${green}, ${blue})`;
-  });
 
   return (
-     <div className={props.classStyle} data-label="LA"></div>
-  )
- 
+    <>
+      {isAuth ? (
+        <img {...props} src={props.avatar} className={props.classStyle} data-label="LA" ></img>
+      ) : (
+        <div className={props.classStyle} data-label="LA"></div>
+      )}
+    </>
+  );
 }
 
 export default UserAvatar;

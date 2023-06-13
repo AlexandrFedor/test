@@ -214,6 +214,7 @@
 }
 
 .add-photo input {
+    font-family: 'bionbook_cond';
   width: 100%;
   margin-bottom: 2vh;
   height: calc(2.25rem + 2px);

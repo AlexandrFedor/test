@@ -14,7 +14,7 @@
 .releasesImg {
     transition: all 350ms;
     cursor: pointer;
-  position: absolute;
+  position: fixed;
   width: 71.54px;
   height: 75.58px;
   border-radius: 50%;
@@ -39,14 +39,10 @@
   left: 630px;
   top: 520px;
 }
-.releasesImg:nth-child(4) {
-  right: 775px;
-  top: 790px;
-}
+
 
 .containerMdHex {
     text-align: center;
-  width: 70vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -92,6 +88,17 @@
     opacity: 0.6;
 }
 
+.appleKit {
+    margin: 0px 20px;
+  width: 100%;
+  max-width: 660px;
+  overflow: hidden;
+  border-radius: 10px;
+  transform: translateZ(0px);
+  animation: 2s ease 0s 6 normal none running loading-indicator;
+  background-color: rgb(228, 228, 228);
+}
+
 @keyframes pulse {
   0% {
     filter: drop-shadow(0px 0px 10px rgba(3, 153, 41, 0));
@@ -107,4 +114,58 @@
 .linksHexv img{
     width: 20px;
    
+}
+
+@media (min-width: 250px) and (max-width: 750px) {
+
+    
+.katanaHexv {
+    width: 90vw;
+  }
+  .containerMdHex{
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgHexv {
+    width: 30vw;
+  }
+
+  .appleKit{
+    width: 90vw;
+  }
+
+  .textMdHex{
+
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .textMdHex p{
+    font-size: 16px;
+  }
+  .textMdHex h1{
+    margin-top: 0;
+  }
+
+  .releaseBlock {
+    margin-right: 0;
+  }
+  .releasesImg {
+    width: 60px;
+    height: 60px;
+  }
+  .releasesImg:nth-child(1) {
+    right: 10px;
+    top: 520px;
+  }
+  .releasesImg:nth-child(5) {
+    left: 50px;
+    top: 420px;
+  }
+  
+  .releasesImg:nth-child(3) {
+    left: 5px;
+    top: 520px;
+  }
 }

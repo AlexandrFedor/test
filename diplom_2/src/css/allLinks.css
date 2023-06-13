@@ -19,3 +19,9 @@
     
     filter: invert(12%) sepia(100%) saturate(5100%) hue-rotate(190deg) brightness(86%) contrast(88%);
 }
+
+@media (min-width: 250px) and (max-width: 750px) {
+    .all-links img{
+        width: 30px;
+    }
+}

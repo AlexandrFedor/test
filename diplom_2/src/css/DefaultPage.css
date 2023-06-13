@@ -51,17 +51,15 @@ padding: 0px 5px;
   }
  
   .avatar {
-      margin-top: 2.25vh;
       margin-right: 5vh;
       font-size: 3vh;
-      width: 6vh;
-      height: 6vh;
+      width: 5vh;
       border-radius: 50%;
-      background: #555;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
+
     }
     
     .avatar::after {
@@ -122,3 +120,5 @@ padding: 0px 5px;
       }
       
   }
+
+
